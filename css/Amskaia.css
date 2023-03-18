@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+}
+body{
+    direction: rtl;
+    font-family: 'Rakkas', cursive;
+    background: rgb(15, 122, 160);
+background: linear-gradient(176deg, rgb(90, 116, 125) 0%, rgb(84, 144, 156) 10%, rgb(129, 196, 238) 47%, rgb(47, 108, 113) 74%);
+}
+
+.sidebar{
+    height: fit-content;
+    width: 250px;
+    
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar li a {
+    transition: 0.3s;
+}
+.sidebar li  .active {
+    color: #cdae08;
+}
+.sidebar li a:hover {
+    color: #cdae08;
+}
+.amsakia-page{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+}
+.amsakia-page .Amskaia{
+    border-radius: 50px 0 50px 0px;
+}
+.amsakia-page img {
+    max-width: 100%;
+}
+.info-amsakia a{
+    padding: 5px 20px 5px 20px;
+}
+.amsakia-page h1 {
+    border-radius: 50px 6px 6px 6px;
+}
+.Amskaia{
+    transition: 0.3s;
+    overflow: hidden;
+    }
+.Amskaia:hover{
+    transform: scale(1.1) ;
+}
+.Amskaia img{
+    transition: 1s;
+    }
+.Amskaia:hover img{
+    transform: scale(1.05) rotate(5deg);
+    }
+    .Amskaia p {
+        font-size: 25px;
+    }
+@media (max-width:401px){
+    .sidebar span {
+        font-size: 11px;
+    }
+}
+
+.doaa p {
+    font-size: 20px;
+    padding: 20px;
+}

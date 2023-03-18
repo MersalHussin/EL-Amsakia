@@ -1,0 +1,132 @@
+body{
+box-sizing: border-box;
+margin: 0;
+font-family: 'Rakkas', cursive;
+height: 100vh;
+}
+
+
+body img {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+body .Parent {
+    min-height: 100vh;
+    background-image: url(../images/12978520_5110786.jpg);
+    background-size: cover;
+    position: relative;
+}
+ .Parent .text {
+ text-align: center;
+ overflow: hidden;
+ position: relative;
+ z-index: 99;
+ overflow: hidden;
+ margin-left: 20px;
+ margin-right: 20px;
+
+
+ }
+ .Parent .text h1{
+    margin: 0 ;
+    padding-top: 125px;
+    font-size: 60px;
+    color: gold;
+    margin: 0 auto;
+ }
+ .Parent .text p {
+    color: white;
+    width: 350px;
+    line-height: 2;
+    margin: 10px auto;
+    font-family: 'El Messiri', sans-serif;
+    margin-top: 50px;
+
+ }
+ @media (max-width:767px){
+    .Parent .text p {
+        width: 300px;
+     }
+     .Parent .text h1{
+        margin: 0 ;
+        padding-top: 125px;
+        font-size: 30px;
+        color: gold;
+        margin: 0 auto;
+     }
+ }
+
+  .Parent .boutton{
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  margin-top: 50px;
+ }
+.Parent .boutton a {
+    padding: 20px 10px ;
+    background: gold;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: white 4px solid;
+    outline:  gold 4px solid;
+    transition: 0.3s;
+    border-radius: 20px 10px 20px 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.Parent .boutton i {
+margin-right: 10px;
+}
+
+.Parent .boutton:hover a{
+background-color: #dbba0c;
+outline:  #dbba0c 4px solid;
+
+   }
+
+   .Parent .text img{
+   position: relative;
+   top: -5px;
+   width: 150px;
+   height: 150px;
+   margin-bottom: 50px;
+   z-index: 1;
+   animation-name: fanous;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 1s;
+   animation-direction: alternate;
+}
+
+footer{
+    text-align: center;
+    background-color: #dbba0c;
+    padding: 20px;
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #088fad;
+}
+
+@media (max-width:767px){
+    .Parent .text img{
+        display: none;
+    }
+}
+@keyframes fanous{
+    0%{
+        transform: translateX(-50px) rotate(10deg);
+    }
+    100%{
+        transform: translateX(50px) rotate( -10deg);
+    }
+}
